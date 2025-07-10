@@ -1,0 +1,58 @@
+#detalleVentasContainer {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#tablaDetalleVentas {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#tablaDetalleVentas th, #tablaDetalleVentas td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+#tablaDetalleVentas th {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.even-row { 
+    background: #f8f9fa; 
+}
+
+.odd-row { 
+    background: #ffffff; 
+}
+
+#mensajeDetalleVentas {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #detalleVentasContainer {
+        padding: 20px;
+    }
+    
+    #tablaDetalleVentas {
+        font-size: 0.9rem;
+    }
+    
+    #tablaDetalleVentas th, #tablaDetalleVentas td {
+        padding: 8px 10px;
+    }
+} 

@@ -1,0 +1,151 @@
+/* Estilos para niveles de stock */
+.stock-bajo {
+    background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%) !important;
+    color: #c62828;
+    font-weight: 500;
+}
+
+.stock-bajo:hover {
+    background: linear-gradient(135deg, #ffcdd2 0%, #ef9a9a 100%) !important;
+}
+
+.stock-medio {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%) !important;
+    color: #ef6c00;
+    font-weight: 500;
+}
+
+.stock-medio:hover {
+    background: linear-gradient(135deg, #ffe0b2 0%, #ffcc02 100%) !important;
+}
+
+.stock-alto {
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%) !important;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.stock-alto:hover {
+    background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%) !important;
+}
+
+/* Estilos mejorados para la tabla */
+.stock-table { 
+    border-collapse: collapse; 
+    width: 100%; 
+    margin: 30px auto 0 auto; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stock-table th, .stock-table td { 
+    border: 1px solid #e0e0e0; 
+    padding: 12px 16px; 
+    text-align: left; 
+}
+
+.stock-table th { 
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stock-table tr:nth-child(even) { 
+    background: #fafafa; 
+}
+
+.stock-table input[type='number'] { 
+    width: 80px; 
+    padding: 8px 12px;
+    border: 2px solid #e1e8ed;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stock-table input[type='number']:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.guardar-btn { 
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: #fff; 
+    border: none; 
+    border-radius: 6px; 
+    padding: 8px 16px; 
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.guardar-btn:hover {
+    background: linear-gradient(45deg, #2980b9, #1f5f8b);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+.guardar-btn:active {
+    transform: translateY(0);
+}
+
+#stockContainer { 
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#stockContainer .stock-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+#stockContainer .stock-table th, #stockContainer .stock-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+#stockContainer .stock-table th {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+#stockContainer .even-row { 
+    background: #f7fafd; 
+}
+
+#stockContainer .odd-row { 
+    background: #fff; 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #stockContainer {
+        padding: 20px;
+    }
+    
+    .stock-table {
+        font-size: 0.9rem;
+    }
+    
+    .stock-table th, .stock-table td {
+        padding: 8px 10px;
+    }
+    
+    .stock-table input[type='number'] {
+        width: 60px;
+        padding: 6px 8px;
+    }
+} 

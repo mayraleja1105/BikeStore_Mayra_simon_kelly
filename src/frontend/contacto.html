@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Store - Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Bike Store" style="height: 60px;">
+            <span>Bike Store</span>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contacto.html" class="active">Contacto</a>
+            <div id="userSection">
+                <span id="userName"></span>
+                <button id="loginBtn" style="display: none;">Iniciar Sesión</button>
+                <button id="logoutBtn" style="display: none;">Cerrar Sesión</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contacto-container">
+            <h1>Contacto</h1>
+            <p class="subtitle">Estamos aquí para ayudarte. ¡Contáctanos!</p>
+
+            <div class="info-tienda-container">
+                <!-- Información de la tienda -->
+                <div class="info-tienda">
+                    <h2>Información de la Tienda</h2>
+                    
+                    <div class="info-item">
+                        <div class="icon">📍</div>
+                        <div class="info-content">
+                            <h3>Dirección</h3>
+                            <p>Calle 123 #45-67<br>
+                            Barrio Centro<br>
+                            Bogotá, Colombia</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">📞</div>
+                        <div class="info-content">
+                            <h3>Teléfono</h3>
+                            <p>+57 300 123 4567<br>
+                            +57 1 234 5678</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">✉️</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>info@bikestore.com<br>
+                            ventas@bikestore.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">🕒</div>
+                        <div class="info-content">
+                            <h3>Horarios de Atención</h3>
+                            <p><strong>Lunes a Viernes:</strong> 8:00 AM - 7:00 PM<br>
+                            <strong>Sábados:</strong> 9:00 AM - 6:00 PM<br>
+                            <strong>Domingos:</strong> 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">🚴</div>
+                        <div class="info-content">
+                            <h3>Servicios</h3>
+                            <p>• Venta de bicicletas y accesorios<br>
+                            • Servicio técnico y mantenimiento<br>
+                            • Asesoría personalizada<br>
+                            • Financiación disponible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa y redes sociales -->
+            <div class="mapa-redes">
+                <div class="mapa">
+                    <h2>Ubicación</h2>
+                    <div class="mapa-placeholder">
+                        <div class="mapa-content">
+                            <div class="mapa-icon">🗺️</div>
+                            <p>Mapa interactivo</p>
+                            <p class="mapa-desc">Calle 123 #45-67, Bogotá</p>
+                            <button class="btn-mapa" onclick="abrirMapa()">Ver en Google Maps</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="redes-sociales">
+                    <h2>Síguenos</h2>
+                    <div class="redes-grid">
+                        <a href="#" class="red-social" title="Facebook">
+                            <div class="red-icon">📘</div>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="red-social" title="Instagram">
+                            <div class="red-icon">📷</div>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="red-social" title="WhatsApp">
+                            <div class="red-icon">📱</div>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="#" class="red-social" title="YouTube">
+                            <div class="red-icon">📺</div>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Logo Bike Store" style="height: 50px;">
+                <span class="footer-title">BIKE STORE</span>
+            </div>
+            <div class="footer-social">
+                <a href="#" title="Facebook" target="_blank" class="footer-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H6v4h4v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" title="Instagram" target="_blank" class="footer-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+                </a>
+                <a href="#" title="WhatsApp" target="_blank" class="footer-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.67 20.13a10 10 0 1 0-3.54 3.54l2.2-.63a1 1 0 0 0 .7-.7z"></path><path d="M8.54 15.54a6.5 6.5 0 0 1 7.92-7.92l.54.54a1 1 0 0 1 0 1.41l-1.09 1.09a1 1 0 0 1-1.41 0l-.54-.54a4.5 4.5 0 0 0-5.66 5.66l.54.54a1 1 0 0 1 0 1.41l-1.09 1.09a1 1 0 0 1-1.41 0z"></path></svg>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <span>+57 300 123 4567</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contacto.js"></script>
+</body>
+</html> 
