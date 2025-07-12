@@ -1,6 +1,6 @@
 -- CREATE DATABASE bikestore;
 create database bikestore_Mayra;
-USE bikestore_Mayra;
+USE bikestore;
 
 -- Tabla: productos
 CREATE TABLE productos (
